@@ -1,0 +1,365 @@
+<!doctype html>
+<html lang="en" dir="ltr">
+
+<head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.rtl.min.css"
+        integrity="sha384-gXt9imSW0VcJVHezoNQsP+TNrjYXoGcrqBZJpry9zJt8PCQjobwmhMGaDHTASo9N" crossorigin="anonymous">
+
+    <title>cover_crop</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <nav class="navbar navbar-light navcolor">
+        <div class="container-fluid">
+            <form class="d-flex">
+                <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
+                <button class="btn btn-outline-success" type="submit">Search</button>
+            </form>
+        </div>
+    </nav>
+    <div class="container-fluid">
+        <div class="row">
+            <!-- <div class="col-lg-12">
+                <div id="carouselExampleSlidesOnly" class="carousel slide" data-bs-ride="carousel">
+                    <div class="carousel-inner">
+                        <div class="carousel-item active border border-3 border-info">
+                            <img src="banner.png" class="d-block w-100" alt="image not loaded">
+                        </div>
+                    </div>
+                </div>
+            </div> -->
+            <!-- upper crousel -->
+            <div class="col-lg-12 border border-3 border-info">
+                <div id="carouselExampleIndicators" class="carousel slide" data-bs-ride="carousel">
+                    <div class="carousel-indicators">
+                      <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
+                      <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="1" aria-label="Slide 2"></button>
+                      <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="2" aria-label="Slide 3"></button>
+                    </div>
+                    <div class="carousel-inner">
+                      <div class="carousel-item active">
+                        <img src="lowerbanner31.png" class="d-block w-100" alt="image not loaded">
+                      </div>
+                      <div class="carousel-item">
+                        <img src="lowerbanner32.png" class="d-block w-100" alt="image not loaded">
+                      </div>
+                      <div class="carousel-item">
+                        <img src="lowerbanner3.png" class="d-block w-100" alt="image not loaded">
+                      </div>
+                    </div>
+                    <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide="prev">
+                      <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                      <span class="visually-hidden">Previous</span>
+                    </button>
+                    <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide="next">
+                      <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                      <span class="visually-hidden">Next</span>
+                    </button>
+                  </div>                
+            </div>
+            <!-- content -->
+            <div class="col-lg-6">
+                <p class="text-center fs-1 fst-italic">COVER CROP CALCULATOR :-</p>
+                <P class="text-center fs-5 fst-italic ">
+                    This calculator can give you a precise idea about the mathematical aspects of the yields and other
+                    paramethers if you use one of the particular cover crops :-
+                </P>
+                <div class="row">
+                    <div class="col-lg-2 align-items-center justify-content-center">
+                        <img src="pic2.png" alt="image not loaded" class="border border-3 border-info">
+                    </div>
+                </div>
+                <p>
+                    <b>Note: </b> This Soil Health Calculator provides estimates based <br> on overall average values of
+                    measurements reported in more than 500 studies. <br> These studies represent a range of cropping
+                    systems and times since implementation <br> of winter cover crops. Therefore, actual results will
+                    likely vary.
+                </p>
+            </div>
+            <div class="col-lg-6">
+                <p class="text-center fs-1 fst-italic">PARAMETERS USED :-</p>
+                <div class="row justify-content-evenly align-items-center">
+                    <div class="col-lg-8 justify-content-center align-items-center">
+                        <div class="accordion accordion-flush w-10 " id="accordionFlushExample">
+                            <div class="accordion-item">
+                                <h2 class="accordion-header" id="flush-headingOne">
+                                    <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                                        data-bs-target="#flush-collapseOne" aria-expanded="false"
+                                        aria-controls="flush-collapseOne">
+                                        CASH CROPS YIELD
+                                    </button>
+                                </h2>
+                                <div id="flush-collapseOne" class="accordion-collapse collapse"
+                                    aria-labelledby="flush-headingOne" data-bs-parent="#accordionFlushExample">
+                                    <div class="accordion-body">Cash crop yield
+                                        Cash crop yield for the season following winter cover crops.
+                                        Positive (+) values mean that on average the cash crop will have a higher yield
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="accordion-item">
+                                <h2 class="accordion-header" id="flush-headingTwo">
+                                    <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                                        data-bs-target="#flush-collapseTwo" aria-expanded="false"
+                                        aria-controls="flush-collapseTwo">
+                                        BULK DENSITY
+                                    </button>
+                                </h2>
+                                <div id="flush-collapseTwo" class="accordion-collapse collapse"
+                                    aria-labelledby="flush-headingTwo" data-bs-parent="#accordionFlushExample">
+                                    <div class="accordion-body">Bulk density
+                                        Mass of soil particles within a given volume.
+                                        Negative (-) values are associated with more pore space and less compaction
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="accordion-item">
+                                <h2 class="accordion-header" id="flush-headingThree">
+                                    <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                                        data-bs-target="#flush-collapseThree" aria-expanded="false"
+                                        aria-controls="flush-collapseThree">
+                                        SOIL ORGANIC CARBON
+                                    </button>
+                                </h2>
+                                <div id="flush-collapseThree" class="accordion-collapse collapse"
+                                    aria-labelledby="flush-headingThree" data-bs-parent="#accordionFlushExample">
+                                    <div class="accordion-body">Organic matter associated carbon in soil.
+                                        Positive (+) values are associated with greater soil water holding capacity and
+                                        better structure</div>
+                                </div>
+                            </div>
+                            <div class="accordion-item">
+                                <h2 class="accordion-header" id="flush-heading4">
+                                    <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                                        data-bs-target="#flush-collapse4" aria-expanded="false"
+                                        aria-controls="flush-collapse4">
+                                        NITROGEN
+                                    </button>
+                                </h2>
+                                <div id="flush-collapse4" class="accordion-collapse collapse"
+                                    aria-labelledby="flush-heading4" data-bs-parent="#accordionFlushExample">
+                                    <div class="accordion-body">Amount of nitrogen in the soil, including inorganic and
+                                        organic forms
+                                        Positive (+) values mean that less inorganic nitrogen may be required for the
+                                        cash
+                                        crop(s)</div>
+                                </div>
+                            </div>
+                            <div class="accordion-item">
+                                <h2 class="accordion-header" id="flush-heading5">
+                                    <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                                        data-bs-target="#flush-collapse5" aria-expanded="false"
+                                        aria-controls="flush-collapse5">
+                                        AGGREGATE STABILITY
+
+                                    </button>
+                                </h2>
+                                <div id="flush-collapse5" class="accordion-collapse collapse"
+                                    aria-labelledby="flush-heading5" data-bs-parent="#accordionFlushExample">
+                                    <div class="accordion-body">
+                                        Ability of soil aggregates to hold together during disturbances such as rain.
+                                        Positive (+) values indicate greater stability and more resistance to erosion
+                                        and
+                                        crusting</div>
+                                </div>
+                            </div>
+                            <div class="accordion-item">
+                                <h2 class="accordion-header" id="flush-heading6">
+                                    <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                                        data-bs-target="#flush-collapse6" aria-expanded="false"
+                                        aria-controls="flush-collapse6">
+                                        INFILTRATION RATES
+                                    </button>
+                                </h2>
+                                <div id="flush-collapse6" class="accordion-collapse collapse"
+                                    aria-labelledby="flush-heading6" data-bs-parent="#accordionFlushExample">
+                                    <div class="accordion-body">Rate at which water can enter into the soil.
+                                        Positive (+) values indicate that soil will absorb more water and have less
+                                        overland
+                                        flow during rain</div>
+                                </div>
+                            </div>
+                            <div class="accordion-item">
+                                <h2 class="accordion-header" id="flush-heading7">
+                                    <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                                        data-bs-target="#flush-collapse7" aria-expanded="false"
+                                        aria-controls="flush-collapse7">
+                                        Ks
+                                    </button>
+                                </h2>
+                                <div id="flush-collapse7" class="accordion-collapse collapse"
+                                    aria-labelledby="flush-heading7" data-bs-parent="#accordionFlushExample">
+                                    <div class="accordion-body">Saturated hydraulic conductivity, which controls the
+                                        rate of
+                                        water movement through soil.
+                                        Positive (+) values indicate that water will move with less resistance into and
+                                        through soil</div>
+                                </div>
+                            </div>
+                            <div class="accordion-item">
+                                <h2 class="accordion-header" id="flush-heading8">
+                                    <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                                        data-bs-target="#flush-collapse8" aria-expanded="false"
+                                        aria-controls="flush-collapse8">
+                                        EROSION
+                                    </button>
+                                </h2>
+                                <div id="flush-collapse8" class="accordion-collapse collapse"
+                                    aria-labelledby="flush-heading8" data-bs-parent="#accordionFlushExample">
+                                    <div class="accordion-body">Movement and/or loss of soil due to wind or rain.
+                                        Negative (-) values mean that less soil is affected by erosion</div>
+                                </div>
+                            </div>
+                            <div class="accordion-item">
+                                <h2 class="accordion-header" id="flush-heading9">
+                                    <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                                        data-bs-target="#flush-collapse9" aria-expanded="false"
+                                        aria-controls="flush-collapse9">
+                                        RUNOFF
+                                    </button>
+                                </h2>
+                                <div id="flush-collapse9" class="accordion-collapse collapse"
+                                    aria-labelledby="flush-heading9" data-bs-parent="#accordionFlushExample">
+                                    <div class="accordion-body">Water that ponds up on the soil surface and moves as
+                                        overland flow.
+                                        Negative (-) values means less overland flow, meaning less erosion and greater
+                                        replenishment of soil water</div>
+                                </div>
+                            </div>
+                            <div class="accordion-item">
+                                <h2 class="accordion-header" id="flush-heading10">
+                                    <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                                        data-bs-target="#flush-collapse10" aria-expanded="false"
+                                        aria-controls="flush-collapse10">
+                                        LEACHING
+                                    </button>
+                                </h2>
+                                <div id="flush-collapse10" class="accordion-collapse collapse"
+                                    aria-labelledby="flush-heading10" data-bs-parent="#accordionFlushExample">
+                                    <div class="accordion-body">Water that drains below the root zone.
+                                        Negative (-) values mean less leaching, which can reduce loss of fertilizers and
+                                        herbicides/pesticides from soil</div>
+                                </div>
+                                <div class="accordion-item">
+                                    <h2 class="accordion-header" id="flush-heading11">
+                                        <button class="accordion-button collapsed" type="button"
+                                            data-bs-toggle="collapse" data-bs-target="#flush-collapse11"
+                                            aria-expanded="false" aria-controls="flush-collapse11">
+                                            WEEDS
+                                        </button>
+                                    </h2>
+                                    <div id="flush-collapse11" class="accordion-collapse collapse"
+                                        aria-labelledby="flush-heading11" data-bs-parent="#accordionFlushExample">
+                                        <div class="accordion-body">Biomass associated with weeds during the following
+                                            cash
+                                            crop growing season.
+                                            Negative (-) values mean that fewer weeds were found in the field after
+                                            cover
+                                            crops</div>
+                                    </div>
+                                    <div class="accordion-item">
+                                        <h2 class="accordion-header" id="flush-heading12">
+                                            <button class="accordion-button collapsed" type="button"
+                                                data-bs-toggle="collapse" data-bs-target="#flush-collapse12"
+                                                aria-expanded="false" aria-controls="flush-collapse12">
+                                                MICROBIAL BIOMASS C
+                                            </button>
+                                        </h2>
+                                        <div id="flush-collapse12" class="accordion-collapse collapse"
+                                            aria-labelledby="flush-heading12" data-bs-parent="#accordionFlushExample">
+                                            <div class="accordion-body">Carbon associated with soil microbes.
+                                                Positive (+) values are associated with beneficial biological functions
+                                                and
+                                                more plant available carbon</div>
+                                        </div>
+                                        <div class="accordion-item">
+                                            <h2 class="accordion-header" id="flush-heading13">
+                                                <button class="accordion-button collapsed" type="button"
+                                                    data-bs-toggle="collapse" data-bs-target="#flush-collapse13"
+                                                    aria-expanded="false" aria-controls="flush-collapse13">
+                                                    MICROBIAL BIOMASS N
+                                                </button>
+                                            </h2>
+                                            <div id="flush-collapse13" class="accordion-collapse collapse"
+                                                aria-labelledby="flush-heading13"
+                                                data-bs-parent="#accordionFlushExample">
+                                                <div class="accordion-body">Nitrogen associated with soil microbes.
+                                                    Positive (+) values are associated with beneficial biological
+                                                    functions
+                                                    and more plant available nitrogen
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <!-- calculator -->
+            <div class="col-lg-12 text-center fs-5 fst-italic">
+                <p class="text-center fs-1 fst-italic">OUR CALCULATOR :-</p>
+                <form id="crop-suggestion-form">
+                    <label for="climate">Climate:</label>
+                    <select id="climate" name="climate">
+                        <option value="tropical">Tropical</option>
+                        <!-- <option value="arid">Arid</option>
+                        <option value="temperate">Temperate</option>
+                        <option value="continental">Continental</option> -->
+                    </select>
+                    <br>
+                    <label for="soil-texture">Soil Texture:</label>
+                    <select id="soil-texture" name="soil-texture">
+                        <option value="medium">Medium</option>
+                        <option value="coarse">Coarse</option>
+                        <option value="fine">Fine</option>
+                    </select>
+                    <br>
+                    <label for="cash-crop">Cash Crop:</label>
+                    <select id="cash-crop" name="cash-crop">
+                        <option value="corn">Corn</option>
+                        <option value="soybean">Soybean</option>
+                        <option value="wheat">Wheat</option>
+                        <option value="vegetable">Vegetable</option>
+                        <option value="other-crop">Other Crop</option>
+                    </select>
+                    <br>
+                    <label for="cover-crop">Cover Crop:</label>
+                    <select id="cover-crop" name="cover-crop">
+                        <option value="grass-species">Grass Species</option>
+                        <option value="legume-species">Legume Species</option>
+                        <option value="other-species">Other Species</option>
+                        <!-- <option value="multi-species">Multi-Species - Mixture</option> -->
+                    </select>
+                    <br>
+                    <button type="submit">Submit</button>
+                </form>
+                <br>
+                <div id="suggestion-output"></div>
+            </div>
+            <div class="col-lg-12">
+                <div id="carouselExampleSlidesOnly" class="carousel slide" data-bs-ride="carousel">
+                    <div class="carousel-inner">
+                        <div class="carousel-item active border border-3 border-info">
+                            <img src="banner.png" class="d-block w-100" alt="image not loaded">
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- Option 1: Bootstrap Bundle with Popper -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM"
+        crossorigin="anonymous"></script>
+    <script src="script.js"></script>
+</body>
+
+</html>
